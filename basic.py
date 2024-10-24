@@ -64,7 +64,7 @@ def print_slot_machine(columns):
 
 def deposit():
     while True:
-        amount = input("What would you like to deposit? $")
+        amount = input("How much would you like to deposit? $")
         if amount.isdigit():
             amount = int(amount)
             if amount > 0:
@@ -92,7 +92,7 @@ def get_number_of_lines():
 
 def get_bet():
     while True:
-        amount = input("What would you like to bet on each line? $")
+        amount = input("How much would you like to bet on each line? $")
         if amount.isdigit():
             amount = int(amount)
             if MIN_BET <= amount <= MAX_BET:
